@@ -19,5 +19,6 @@ public final class ReturnCodeKeys {
     public static final int E016 = 16;
     public static final int E017 = 17;
     public static final int E018 = 18;
+    public static final int E019 = 19;
     private ReturnCodeKeys() {    }
 }
