@@ -96,11 +96,8 @@ public class Schedule {
         if(waitTaskList.remove(task)){
             return ReturnCodeKeys.E011;
         }
-        else if(runTaskList.remove(task)){
-            if(task.getNode()!=null){
-                task.getNode().getTaskList().remove(task);
-            }
-
+        else if(runTaskList.contains(task)){
+            runTaskList.remove();
             return ReturnCodeKeys.E011;
         }
         else{
@@ -193,6 +190,7 @@ public class Schedule {
 
 
 
+            System.out.println("============="+runTaskList);
             // 分配后计算是否在调度阈值范围内
             int minConsumption=0;
             int MaxConsumption=0;
