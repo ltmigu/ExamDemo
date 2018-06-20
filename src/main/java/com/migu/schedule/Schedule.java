@@ -170,8 +170,6 @@ public class Schedule {
                     else {return 0;}
                 }
             });
-            System.out.println(">>>>>>>>>"+waitTaskList.size());
-            System.out.println("--------------------"+runTaskList);
 
 
             // 分配后计算是否在调度阈值范围内
@@ -190,7 +188,6 @@ public class Schedule {
 
 
 
-            System.out.println("============="+runTaskList);
             // 分配后计算是否在调度阈值范围内
             int minConsumption=0;
             int MaxConsumption=0;
