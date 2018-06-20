@@ -251,14 +251,5 @@ public class Schedule {
         this.runTaskList = runTaskList;
     }
 
-    public static void main(String [] args){
-        Schedule schedule = new Schedule();
-        Task taskInfo = new Task(1);
-        taskInfo.setTaskId(1);
-        schedule.getWaitTaskList().add(taskInfo);
-        System.out.println(schedule.getWaitTaskList().size());
-        System.out.println(schedule.getWaitTaskList());
 
-
-    }
 }
